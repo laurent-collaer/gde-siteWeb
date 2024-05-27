@@ -117,3 +117,10 @@ footer a:visited {
     align-items: center;
     width: 500px;
 }
+
+@media screen and (max-width: 600px) {
+    section{
+        display: flex;
+        text-justify: none;
+    }
+}
