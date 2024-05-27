@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'OptimusPrinceps';
+    src: url('OptimusPrinceps.woff2') format('woff2'),
+        url('OptimusPrinceps.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'OptimusPrinceps';
+}
+
+ul {
+    list-style: none;
+
+}
+
+a,
+a:visited {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+
+}
+
+header img {
+    max-width: 1200px;
+    width: 100%;
+}
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+nav ul {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 100px;
+    gap: 0;
+
+}
+
+.nav-link {
+    background-color: rgb(230, 234, 213);
+    width: calc((100%)/6);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid rgb(0, 0, 0);
+    border-radius: 0 0 10px 10px;
+}
+.nav-link:hover {
+    background-color: rgba(176, 179, 162, 0.859);
+}
+header li img{
+    height: 50px;
+    width: 50px;
+}
+#nav-discordlink{
+    width: fit-content;
+}
+#nav-discordlink a{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
