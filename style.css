@@ -42,6 +42,7 @@ nav {
     width: 100%;
     display: flex;
     justify-content: center;
+    
 }
 nav ul {
     display: flex;
@@ -49,6 +50,8 @@ nav ul {
     max-width: 1200px;
     height: 100px;
     gap: 0;
+    margin: 0;
+    padding-left: 0px;
 
 }
 
@@ -116,11 +119,59 @@ footer a:visited {
     display: flex;
     align-items: center;
     width: 500px;
+    max-width: 100%; /* Pour que l'image se redimensionne correctement */
+    height: auto; 
 }
 
+#titre,
+#planhebdomadaire {
+    display: block; /* Affiche les éléments en bloc */
+    width: 100%; /* Assure que les éléments occupent toute la largeur */
+}
+
+#planhebdomadaire img {
+    max-width: 100%; /* Pour rendre l'image responsive */
+    height: auto; /* Assure la hauteur proportionnelle à la largeur */
+}
+
+
+
 @media screen and (max-width: 600px) {
-    section{
-        display: flex;
-        text-justify: none;
+    header {
+        text-align: center;
+        align-items: center; /* Ensure items are centered */
+    }
+
+    header a {
+        justify-content: center; /* Center header links */
+    }
+    section {
+        display: block; /* Modified */
+        gap: 0; /* Modified */
+    }
+    
+    main {
+        padding: 0; /* Modified */
+        width: 100%; /* Modified */
+    }
+
+    section article, section aside {
+        width: 100%; /* Modified */
+    }
+
+    iframe {
+        width: 100%; /* Modified */
+        height: auto; /* Modified */
+    }
+
+    nav ul {
+        flex-direction: column; /* Modified */
+        align-items: center; /* Modified */
+        height: auto; /* Modified */
+    }
+
+    .nav-link {
+        width: 100%; /* Modified */
+        padding: 10px 0; /* Modified */
     }
 }
