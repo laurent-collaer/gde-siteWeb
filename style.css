@@ -93,6 +93,9 @@ article{
 }
 section{
     display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
     gap: 5%;
 }
 section article{
@@ -116,22 +119,22 @@ footer a:visited {
     color: rgb(255, 255, 255);
 }
 #decret-01-10-23{
-    display: flex;
     align-items: center;
-    width: 500px;
-    max-width: 100%; /* Pour que l'image se redimensionne correctement */
-    height: auto; 
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    display: block;
 }
 
 #titre,
 #planhebdomadaire {
-    display: block; /* Affiche les éléments en bloc */
-    width: 100%; /* Assure que les éléments occupent toute la largeur */
+    display: block; 
+    width: 100%; 
 }
 
 #planhebdomadaire img {
-    max-width: 100%; /* Pour rendre l'image responsive */
-    height: auto; /* Assure la hauteur proportionnelle à la largeur */
+    max-width: 100%; 
+    height: auto; 
 }
 
 
@@ -139,39 +142,39 @@ footer a:visited {
 @media screen and (max-width: 600px) {
     header {
         text-align: center;
-        align-items: center; /* Ensure items are centered */
+        align-items: center; 
     }
 
     header a {
-        justify-content: center; /* Center header links */
+        justify-content: center; 
     }
     section {
-        display: block; /* Modified */
-        gap: 0; /* Modified */
+        display: block;
+        gap: 0;
     }
     
     main {
-        padding: 0; /* Modified */
-        width: 100%; /* Modified */
+        padding: 0;
+        width: 100%; 
     }
 
     section article, section aside {
-        width: 100%; /* Modified */
+        width: 100%; 
     }
 
     iframe {
-        width: 100%; /* Modified */
-        height: auto; /* Modified */
+        width: 100%; 
+        height: auto; 
     }
 
     nav ul {
-        flex-direction: column; /* Modified */
-        align-items: center; /* Modified */
-        height: auto; /* Modified */
+        flex-direction: column;
+        align-items: center; 
+        height: auto; 
     }
 
     .nav-link {
-        width: 100%; /* Modified */
-        padding: 10px 0; /* Modified */
+        width: 100%; 
+        padding: 10px 0; 
     }
 }
